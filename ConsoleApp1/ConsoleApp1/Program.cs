@@ -7,7 +7,7 @@
         private string name;
         private int accountNumber;
         private double balance;
-        private double[] transactions = new double[100]; 
+        private double[] transactions = new double[100];
         private int transactionCount = 0;
 
         public BankAccount(string name, int accountNumber, double initialBalance)
@@ -33,7 +33,7 @@
             else
             {
                 balance -= amount;
-                transactions[transactionCount++] = -amount; 
+                transactions[transactionCount++] = -amount;
                 Console.WriteLine($"Withdrawal of {amount:C} successful.");
             }
         }
@@ -92,7 +92,7 @@
                     ViewTransactionHistory();
                     break;
                 case "5":
-                    Console.WriteLine("Thank you for using the Basic Banking Application. Goodbye!");
+                    Console.WriteLine("Thank you for using the KFH Application. Goodbye!");
                     Environment.Exit(0);
                     break;
                 default:
